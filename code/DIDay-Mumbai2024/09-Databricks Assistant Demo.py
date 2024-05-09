@@ -1,7 +1,7 @@
 # Databricks notebook source
 # MAGIC %md-sandbox
 # MAGIC
-# MAGIC ## <img src="https://raw.githubusercontent.com/sk3023/diday/main/Images/AI-White.png" style="float:left; margin: -35px 0px 0px 0px" width="700px">
+# MAGIC ## <img src="https://raw.githubusercontent.com/sk3023/diday/main/Images/AI-White.png" style="float:left; margin: -35px 0px 0px 0px" width="1100px">
 
 # COMMAND ----------
 
@@ -39,6 +39,14 @@
 # COMMAND ----------
 
 # Generate pandas code to read in parquet files from this path https://raw.githubusercontent.com/databricks-demos/dbdemos-dataset/main/retail/c360/users_parquet/users.parquet.snappy and save it into a dataframe called df and display the first 5 rows
+
+# COMMAND ----------
+
+import pandas as pd
+
+url = "https://raw.githubusercontent.com/databricks-demos/dbdemos-dataset/main/retail/c360/users_parquet/users.parquet.snappy"
+df = pd.read_parquet(url)
+df.head(5)
 
 # COMMAND ----------
 
